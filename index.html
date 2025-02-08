@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <style>
+        th, td{
+            border: 1px solid black;
+        }
+
+        tfoot {
+            background-color: blueviolet;
+        }
+    </style>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th>Curva</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>30</td>
+                <td>R$20</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Bermuda</td>
+                <td>15</td>
+                <td>R$35</td>
+                <td rowspan="2">B</td>
+            </tr>
+            <tr>
+                <td>Calça</td>
+                <td>10</td>
+                <td>R$50</td>
+            </tr>
+            <tr>
+                <td>Conjunto</td>
+                <td>5</td>
+                <td>R$100</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total unidades em estoque</td>
+                <td>60 Un.</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total valor em estoque</td>
+                <td>R$2.125,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
